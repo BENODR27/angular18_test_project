@@ -1,0 +1,98 @@
+ecommerce-app/
+├── src/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── services/
+│   │   │   │   ├── auth.service.ts
+│   │   │   │   ├── http-interceptor.service.ts
+│   │   │   ├── core.module.ts
+│   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   │   ├── navbar/
+│   │   │   │   ├── footer/
+│   │   │   ├── directives/
+│   │   │   ├── pipes/
+│   │   │   ├── shared.module.ts
+│   │   ├── product/
+│   │   │   ├── components/
+│   │   │   │   ├── product-list/
+│   │   │   │   ├── product-detail/
+│   │   │   ├── services/
+│   │   │   │   ├── product.service.ts
+│   │   │   ├── product.module.ts
+│   │   ├── cart/
+│   │   │   ├── components/
+│   │   │   │   ├── cart/
+│   │   │   ├── services/
+│   │   │   │   ├── cart.service.ts
+│   │   │   ├── cart.module.ts
+│   │   ├── checkout/
+│   │   │   ├── components/
+│   │   │   │   ├── checkout/
+│   │   │   ├── services/
+│   │   │   │   ├── payment.service.ts
+│   │   │   ├── checkout.module.ts
+│   │   ├── user/
+│   │   │   ├── components/
+│   │   │   │   ├── user-profile/
+│   │   │   ├── services/
+│   │   │   │   ├── user.service.ts
+│   │   │   ├── user.module.ts
+│   │   ├── admin/
+│   │   │   ├── components/
+│   │   │   │   ├── admin-dashboard/
+│   │   │   ├── services/
+│   │   │   │   ├── admin.service.ts
+│   │   │   ├── admin.module.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.module.ts
+├── backend/
+│   ├── models/
+│   │   ├── product.model.js
+│   │   ├── user.model.js
+│   │   ├── order.model.js
+│   ├── routes/
+│   │   ├── product.js
+│   │   ├── user.js
+│   │   ├── order.js
+│   ├── controllers/
+│   │   ├── product.controller.js
+│   │   ├── user.controller.js
+│   │   ├── order.controller.js
+│   ├── server.js
+
+
+1. Frontend (Angular 18)
+Modules:
+
+CoreModule: Contains singleton services used across the app (e.g., AuthService, HttpInterceptor).
+SharedModule: Contains shared components, directives, and pipes (e.g., Navbar, Footer, CustomPipes).
+ProductModule: Manages product-related components and services (e.g., ProductList, ProductDetail).
+CartModule: Manages the shopping cart (e.g., CartComponent, CartService).
+CheckoutModule: Handles the checkout process (e.g., CheckoutComponent, PaymentService).
+UserModule: Manages user-related components and services (e.g., UserProfile, UserService).
+AdminModule: Admin functionalities (e.g., AdminDashboard, ProductManagement).
+Components:
+
+ProductListComponent: Displays a list of products.
+ProductDetailComponent: Shows detailed information about a product.
+CartComponent: Displays items in the shopping cart.
+CheckoutComponent: Manages the checkout process.
+UserProfileComponent: Displays and manages user profile information.
+AdminDashboardComponent: Admin dashboard for managing the application.
+Services:
+
+ProductService: Handles API calls related to products.
+CartService: Manages the shopping cart state.
+UserService: Manages user data and authentication.
+AuthService: Handles authentication and authorization.
+PaymentService: Manages payment processing.
+State Management:
+
+NgRx: Used for managing the state of the application.
+Routing:
+
+Angular Router: Manages navigation between different components.
+UI Library:
+
+Angular Material: Used for building a responsive and professional-looking UI.

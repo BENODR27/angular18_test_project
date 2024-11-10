@@ -1,0 +1,60 @@
+Sure! Here are the Angular CLI commands to generate the various modules and components for your e-commerce application:
+
+### Core Module
+```bash
+ng generate module core
+ng generate service core/services/auth
+ng generate service core/services/http-interceptor
+```
+
+### Shared Module
+```bash
+ng generate module shared
+ng generate component shared/components/navbar
+ng generate component shared/components/footer
+ng generate directive shared/directives/custom-directive
+ng generate pipe shared/pipes/custom-pipe
+```
+
+### Product Module
+```bash
+ng generate module product --routing
+ng generate component product/components/product-list
+ng generate component product/components/product-detail
+ng generate service product/services/product
+```
+
+### Cart Module
+```bash
+ng generate module cart --routing
+ng generate component cart/components/cart
+ng generate service cart/services/cart
+```
+
+### Checkout Module
+```bash
+ng generate module checkout --routing
+ng generate component checkout/components/checkout
+ng generate service checkout/services/payment
+```
+
+### User Module
+```bash
+ng generate module user --routing
+ng generate component user/components/user-profile
+ng generate service user/services/user
+```
+
+### Admin Module
+```bash
+ng generate module admin --routing
+ng generate component admin/components/admin-dashboard
+ng generate service admin/services/admin
+```
+
+### App Module and Routing
+```bash
+ng generate module app-routing --flat --module=app
+```
+
+These commands will set up the basic structure of your Angular application with the necessary modules, components, and services. If you need further customization or additional features, feel free to ask!
